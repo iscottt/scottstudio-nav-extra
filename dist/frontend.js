@@ -5,9 +5,9 @@
 
 var map = {
 	"./gridBlock/index.js": 8859,
-	"./navLink/index.js": 8395,
+	"./navLink/index.js": 591,
 	"./navSearch/index.js": 8827,
-	"./navTitle/index.js": 9405
+	"./navTitle/index.js": 3309
 };
 
 
@@ -101,7 +101,7 @@ const __exports__ = rendervue_type_script_setup_true_lang_js;
 
 /***/ }),
 
-/***/ 8395:
+/***/ 591:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -552,7 +552,7 @@ var external_Vue_ = __webpack_require__(4061);
 
 
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-835b9078"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-1fc98a08"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = ["innerHTML", "href", "target"];
 var _hoisted_2 = ["innerHTML"];
@@ -720,10 +720,10 @@ var _hoisted_4 = [_hoisted_3];
 });
 ;// CONCATENATED MODULE: ./frontend/src/navLink/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navLink/render.vue?vue&type=style&index=0&id=835b9078&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navLink/render.vue?vue&type=style&index=0&id=1fc98a08&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navLink/render.vue?vue&type=style&index=0&id=835b9078&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navLink/render.vue?vue&type=style&index=0&id=1fc98a08&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -734,7 +734,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-835b9078"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-1fc98a08"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navLink/index.js
@@ -952,7 +952,7 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_
 
 /***/ }),
 
-/***/ 9405:
+/***/ 3309:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -968,7 +968,7 @@ var external_Vue_ = __webpack_require__(4061);
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=script&setup=true&lang=js
 
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-5682ca80"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-15c021b1"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = {
   "class": "scottstudio-navtitle"
@@ -1004,10 +1004,10 @@ var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
 });
 ;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=5682ca80&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=15c021b1&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=5682ca80&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=15c021b1&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -1018,7 +1018,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-5682ca80"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-15c021b1"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navTitle/index.js

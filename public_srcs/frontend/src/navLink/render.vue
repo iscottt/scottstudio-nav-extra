@@ -148,11 +148,14 @@ onMounted(async () => {
   color: #475669;
   text-shadow: 0 1px #fff;
   margin-bottom: 0.5rem;
+  display: inline-block;
+  line-height: 1;
 }
 
 .scottstudio-navitem .description {
   font-size: 13px;
   color: #99a9bf;
+  line-height: 1;
   text-shadow: 0 1px #fff;
 }
 
@@ -207,5 +210,24 @@ onMounted(async () => {
 
 .scottstudio-navitem:hover .icon>div {
   opacity: 1 !important;
+}
+
+:root[theme='dark'] .scottstudio-navitem{
+  background-image: linear-gradient(rgb(45, 55, 72), rgb(26, 32, 44) 88%, rgb(23, 25, 35));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 0px, rgba(255, 255, 255, 0.1) 1px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) -1px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px -1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 0px 0px 2px inset;
+  border-color: rgb(229, 231, 235);
+}
+:root[theme='dark'] .scottstudio-navitem .icon{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px 0px;
+}
+:root[theme='dark'] .scottstudio-navitem .title{
+  color: #e2e8f0;
+}
+:root[theme='dark'] .scottstudio-navitem .description{
+  color: #a0aec0;
+}
+:root[theme='dark'] .scottstudio-navitem .title,
+:root[theme='dark'] .scottstudio-navitem .description{
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
 }
 </style>
