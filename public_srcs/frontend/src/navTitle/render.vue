@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <div class="scottstudio-navtitle">
-    <div class="decoration"  :style="data.style"></div>
+    <div class="decoration" :style="data.style"></div>
     <div class="favlinks_container">
       <div class="favlinks_title">
         <span class="favlinks_title_text" v-html="data.title" />
@@ -36,9 +36,9 @@ defineProps({
   position: absolute;
   transform: translateY(-50%);
 }
-.scottstudio-navtitle:hover .decoration{
 
-    transform: translateX(-10px) translateY(-50%);
+.scottstudio-navtitle:hover .decoration {
+  transform: translateX(-10px) translateY(-50%);
 }
 
 .scottstudio-navtitle .favlinks_container {
@@ -46,7 +46,7 @@ defineProps({
   --tw-shadow-colored: 0 5px 5px var(--tw-shadow-color), inset 1px 0 0 var(--tw-shadow-color), inset -1px 0 0 var(--tw-shadow-color), inset 0 -1px 0 var(--tw-shadow-color), inset 0 0 0 2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-  padding: 1rem;
+  padding: .5rem 1rem;
   background-image: linear-gradient(rgb(255, 255, 255), rgb(249, 250, 251), rgb(243, 244, 246));
   border: 1px solid rgb(229 231 235);
   border-radius: 0.75rem;
@@ -102,7 +102,7 @@ defineProps({
   transform: scale(1.02);
 }
 
-.favlinks_container:hover .favlinks_dynamic_bar{
+.favlinks_container:hover .favlinks_dynamic_bar {
   background: var(--title-bg-hover, rgba(107, 114, 128, 0.15));
   width: 24px;
   animation: pulse 1.5s ease-in-out infinite;
