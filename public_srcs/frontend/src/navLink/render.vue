@@ -1,0 +1,211 @@
+<script setup>
+import { defineProps, ref, onMounted } from 'vue'
+const extractedColor = ref('#0056f0')
+const borderColor = ref('#0067ff')
+const props = defineProps({
+  data: Object,
+})
+function extractColorFromImage(imageUrl) {
+  return new Promise((resolve) => {
+    try {
+      // 创建一个临时Canvas元素
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      if (!ctx) {
+        console.error('Could not get canvas context for color extraction');
+        resolve(DEFAULT_COLOR);
+        return;
+      }
+
+      // 创建图像对象
+      const img = new Image();
+      img.crossOrigin = 'anonymous'; // 允许跨域图片
+
+      // 设置超时处理
+      const timeoutId = setTimeout(() => {
+        console.warn(`Image loading timed out: ${imageUrl}`);
+        resolve(DEFAULT_COLOR);
+      }, 3000); // 3秒超时
+
+      img.onload = () => {
+        clearTimeout(timeoutId); // 清除超时
+        try {
+          // 设置canvas尺寸
+          const size = 20; // 使用小尺寸以提高性能
+          canvas.width = size;
+          canvas.height = size;
+
+          // 绘制图像到canvas上
+          ctx.drawImage(img, 0, 0, size, size);
+
+          // 获取图像数据
+          const imageData = ctx.getImageData(0, 0, size, size).data;
+
+          // 计算平均颜色
+          let r = 0, g = 0, b = 0;
+          let count = 0;
+
+          // 跳过透明像素
+          for (let i = 0; i < imageData.length; i += 4) {
+            const alpha = imageData[i + 3];
+            if (alpha > 128) { // 忽略半透明及以下的像素
+              r += imageData[i];
+              g += imageData[i + 1];
+              b += imageData[i + 2];
+              count++;
+            }
+          }
+
+          // 如果没有有效像素，返回默认蓝色
+          if (count === 0) {
+            resolve(DEFAULT_COLOR);
+            return;
+          }
+
+          // 计算平均值
+          r = Math.round(r / count);
+          g = Math.round(g / count);
+          b = Math.round(b / count);
+
+          // 转换为十六进制
+          const hex = '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+
+          resolve(hex);
+        } catch (error) {
+          console.error('Error processing image data:', error);
+          resolve(DEFAULT_COLOR);
+        }
+      };
+
+      img.onerror = () => {
+        clearTimeout(timeoutId); // 清除超时
+        console.error(`Could not load image: ${imageUrl}`);
+        resolve(DEFAULT_COLOR);
+      };
+
+      // 设置图片源
+      img.src = imageUrl;
+    } catch (error) {
+      console.error('Unexpected error in color extraction:', error);
+      // 终极错误处理，确保总是返回一个颜色
+      resolve(DEFAULT_COLOR);
+    }
+  });
+}
+function getContrastColor(color, lighten = false) {
+  // 解析十六进制颜色
+  const hex = color.replace('#', '');
+  let r = parseInt(hex.substr(0, 2), 16);
+  let g = parseInt(hex.substr(2, 2), 16);
+  let b = parseInt(hex.substr(4, 2), 16);
+  
+  // 根据lighten参数调整颜色亮度
+  const factor = lighten ? 1.2 : 0.8;
+  r = Math.round(Math.min(255, r * factor));
+  g = Math.round(Math.min(255, g * factor));
+  b = Math.round(Math.min(255, b * factor));
+  
+  // 转换回十六进制
+  return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+onMounted(async () => {
+  try {
+    extractedColor.value = await extractColorFromImage(props.data.cover);
+    borderColor.value = getContrastColor(extractedColor.value,true)
+  } catch (error) {
+    extractedColor.value = '#0056f0'
+  }
+})
+</script>
+
+<template>
+  <div class="scottstudio-navitem" :style="`border-top: 3px solid ${borderColor}`">
+    <a class="title" v-html="data.title" :href="data.href" :target="data.opennew ? '_blank' : ''" />
+    <div class="description" v-html="data.desc" />
+
+    <a class="icon"
+      :style="`background-color: ${extractedColor}; background-image: url('${data.cover}'); background-size: 50px 50px;`">
+      <div class="mask"></div>
+    </a>
+  </div>
+</template>
+<style scoped>
+.scottstudio-navitem {
+  box-shadow: 0 5px 5px rgba(215, 221, 230, 0.5), 1px 0 0 #d8e0ea inset, -1px 0 0 #d8e0ea inset, 0 -1px 0 #d8e0ea inset, 0 0 0 2px rgba(255, 255, 255, 0.75) inset;
+  height: 130px;
+  margin: 15px 0 30px;
+  padding: 20px 15px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px 3px 13px 13px;
+  background: linear-gradient(#fff, #fafbfc 88%, #eaeef5);
+}
+
+.scottstudio-navitem .title {
+  font-size: 15.5px;
+  color: #475669;
+  text-shadow: 0 1px #fff;
+  margin-bottom: 0.5rem;
+}
+
+.scottstudio-navitem .description {
+  font-size: 13px;
+  color: #99a9bf;
+  text-shadow: 0 1px #fff;
+}
+
+.scottstudio-article .icon i {
+  font-size: 1.5em;
+}
+
+.scottstudio-navitem .icon {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  color: var(--gray-4);
+  background: #fff;
+  background-position: 50%;
+  background-size: cover;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 33px;
+  left: 50%;
+  margin-left: -33px;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: left ease-out 0.3s, bottom cubic-bezier(0.5, 3, 0.5, 1) 0.75s, width ease-out 0.3s, height ease-out 0.3s, border-radius ease-out 0.15s, margin-left ease-out 0.3s;
+  box-shadow: 0 3px 8px rgba(200, 215, 230, 0.5);
+}
+
+.scottstudio-navitem .icon .mask {
+  opacity: 0.66;
+  transition: 0.25s;
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
+}
+
+.scottstudio-navitem:hover .icon {
+
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-left: 0 !important;
+  border-radius: 0 0 13px 13px !important;
+  transition:
+    ease-out 0.3s !important;
+}
+
+.scottstudio-navitem:hover .icon>div {
+  opacity: 1 !important;
+}
+</style>

@@ -1,0 +1,375 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/gridBlock/render.vue?vue&type=style&index=0&id=4be0fa70&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.sst-content .nv-blocks{
+  display: grid !important;
+  gap: inherit;
+}
+.sst-grid-cols-1 .nv-blocks{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.sst-grid-cols-2 .nv-blocks{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.sst-grid-cols-3 .nv-blocks{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.sst-grid-cols-4 .nv-blocks{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.sst-grid-cols-5 .nv-blocks{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.sst-grid-cols-6 .nv-blocks{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+@media screen and  (max-width: 1280px) {
+.sst-content .nv-blocks{
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+}
+@media screen and (max-width: 768px) {
+.sst-content .nv-blocks{
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+}
+
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navLink/render.vue?vue&type=style&index=0&id=1071d29c&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.scottstudio-navitem[data-v-1071d29c] {
+  box-shadow: 0 5px 5px rgba(215, 221, 230, 0.5), 1px 0 0 #d8e0ea inset, -1px 0 0 #d8e0ea inset, 0 -1px 0 #d8e0ea inset, 0 0 0 2px rgba(255, 255, 255, 0.75) inset;
+  height: 130px;
+  margin: 15px 0 30px;
+  padding: 20px 15px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px 3px 13px 13px;
+  background: linear-gradient(#fff, #fafbfc 88%, #eaeef5);
+}
+.scottstudio-navitem .title[data-v-1071d29c] {
+  font-size: 15.5px;
+  color: #475669;
+  text-shadow: 0 1px #fff;
+  margin-bottom: 0.5rem;
+}
+.scottstudio-navitem .description[data-v-1071d29c] {
+  font-size: 13px;
+  color: #99a9bf;
+  text-shadow: 0 1px #fff;
+}
+.scottstudio-article .icon i[data-v-1071d29c] {
+  font-size: 1.5em;
+}
+.scottstudio-navitem .icon[data-v-1071d29c] {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  color: var(--gray-4);
+  background: #fff;
+  background-position: 50%;
+  background-size: cover;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 33px;
+  left: 50%;
+  margin-left: -33px;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: left ease-out 0.3s, bottom cubic-bezier(0.5, 3, 0.5, 1) 0.75s, width ease-out 0.3s, height ease-out 0.3s, border-radius ease-out 0.15s, margin-left ease-out 0.3s;
+  box-shadow: 0 3px 8px rgba(200, 215, 230, 0.5);
+}
+.scottstudio-navitem .icon .mask[data-v-1071d29c] {
+  opacity: 0.66;
+  transition: 0.25s;
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
+}
+.scottstudio-navitem:hover .icon[data-v-1071d29c] {
+
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-left: 0 !important;
+  border-radius: 0 0 13px 13px !important;
+  transition:
+    ease-out 0.3s !important;
+}
+.scottstudio-navitem:hover .icon>div[data-v-1071d29c] {
+  opacity: 1 !important;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=9f565ef8&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.scottstudio-nav-search[data-v-9f565ef8] {
+  margin-block: 2em;
+}
+.search-main[data-v-9f565ef8] {
+  position: relative;
+  max-width: 60vw;
+  margin: 0 auto;
+}
+.search-main input[data-v-9f565ef8] {
+  font-size: 16px;
+  border-radius: 2rem;
+  padding-right: 3.5rem;
+  line-height: 1.6;
+  width: 100%;
+  accent-color: hsl(0deg 70% 70% / .8);
+  box-shadow: var(--thyuu--shadow-shift);
+  vertical-align: middle;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0.5em 1em;
+  background: var(--thyuu--color-back-font, hsl(0deg 0% 20% / 5%));
+  transition: 0.7s;
+  margin: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+  outline: none;
+}
+.search-main input[data-v-9f565ef8]::-moz-placeholder {
+  -moz-transition: 0.35s;
+  transition: 0.35s;
+}
+.search-main input[data-v-9f565ef8]::placeholder {
+  transition: 0.35s;
+}
+.search-main input[data-v-9f565ef8]:focus::-moz-placeholder {
+  opacity: 0;
+  transform: translateY(-1em);
+}
+.search-main input[data-v-9f565ef8]:focus::placeholder {
+  opacity: 0;
+  transform: translateY(-1em);
+}
+.search-main input[data-v-9f565ef8]::-moz-placeholder {
+  font-size: var(--thyuu--size-medium, .875rem);
+}
+.search-main input[data-v-9f565ef8]::placeholder {
+  font-size: var(--thyuu--size-medium, .875rem);
+}
+.search-main button[data-v-9f565ef8] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: var(--thyuu--size-small, 0.75rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  accent-color: hsl(var(--thyuu--main-color, 0 70% 70%) / .8);
+  width: unset;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 1em;
+  border-radius: 2em;
+  gap: 0.5em;
+  flex: 0 0 auto;
+  margin: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+  outline: none;
+  transition: 0.7s;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 1em 0 hsl(var(--thyuu--main-color, 0 70% 70%) / .2), 0 .5em 1em -0.5em hsl(var(--thyuu--main-color, 0 70% 70%) / .5);
+  background: linear-gradient(135deg, hsl(0deg 0% 20% / 5%) 20%, hsl(var(--thyuu--main-color, 0 70% 70%) / .8) 30%, hsl(var(--thyuu--subs-color, 17deg 95% 70%) / .8) 70%, var(--thyuu--color-back-font, hsl(0deg 0% 20% / 5%)) 80%) 50% / 300% 100%;
+}
+.search-main button .btn-meta[data-v-9f565ef8] {
+  opacity: 0;
+  max-width: 0px;
+  height: 1em;
+  margin: 0px -0.5em 0px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: inherit;
+}
+.search-main button:hover .btn-meta[data-v-9f565ef8] {
+  opacity: 1;
+  max-width: 10em;
+  margin: 0px;
+}
+.search-list[data-v-9f565ef8] {
+  position: relative;
+  text-align: center;
+}
+.search-list .search-group[data-v-9f565ef8] {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.search-list .search-group ul[data-v-9f565ef8] {
+  padding-left: 5px;
+  display: initial;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+.search-list .search-group ul li[data-v-9f565ef8] {
+  display: inline-block;
+}
+.search-list .search-group ul li input[type="radio"][data-v-9f565ef8] {
+  display: none !important;
+}
+.search-list .search-group ul li label[data-v-9f565ef8] {
+  transition: all 0.3s;
+  position: relative;
+  background: transparent !important;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.search-list .search-group ul li label span[data-v-9f565ef8] {
+  font-size: var(--thyuu--size-medium, .875rem);
+  margin-top: 10px;
+  display: inline-block;
+}
+.search-list .search-group ul li label[data-v-9f565ef8]::before {
+  content: '';
+  border-width: 8px 8px 0px 8px;
+  border-style: solid;
+  border-color: var(--thyuu--color-back-font, hsl(0deg 0% 20% / 5%)) transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  margin-left: -8px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.search-list .search-group ul li input:checked+label[data-v-9f565ef8] {
+  color: hsl(var(--thyuu--main-color, 0 70% 70%));
+}
+.search-list .search-group ul li input:checked+label[data-v-9f565ef8]::before {
+  opacity: 1;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=30b52254&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.scottstudio-navtitle[data-v-30b52254] {
+  position: relative;
+  margin-bottom: 1em;
+}
+.scottstudio-navtitle .decoration[data-v-30b52254] {
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: -1.25rem;
+  z-index: 3;
+  top: 50%;
+  left: 0px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.scottstudio-navtitle:hover .decoration[data-v-30b52254]{
+
+    transform: translateX(-10px) translateY(-50%);
+}
+.scottstudio-navtitle .favlinks_container[data-v-30b52254] {
+  --tw-shadow: 0 5px 5px rgba(215, 221, 230, 0.5), 1px 0 0 #d8e0ea inset, -1px 0 0 #d8e0ea inset, 0 -1px 0 #d8e0ea inset, 0 0 0 2px rgba(255, 255, 255, 0.75) inset;
+  --tw-shadow-colored: 0 5px 5px var(--tw-shadow-color), inset 1px 0 0 var(--tw-shadow-color), inset -1px 0 0 var(--tw-shadow-color), inset 0 -1px 0 var(--tw-shadow-color), inset 0 0 0 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  padding: 1rem;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(249, 250, 251), rgb(243, 244, 246));
+  border: 1px solid rgb(229 231 235);
+  border-radius: 0.75rem;
+  width: 100%;
+  z-index: 4;
+  position: relative;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.scottstudio-navtitle .favlinks_title[data-v-30b52254] {
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 20px;
+  position: relative;
+}
+.favlinks_title_text[data-v-30b52254] {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+.favlinks_dynamic_bar[data-v-30b52254] {
+  background: var(--title-bg-color, rgba(107, 114, 128, 0.2));
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+  border-radius: 9999px;
+  width: 4rem;
+  height: 1rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.favlinks_dynamic_bar[data-v-30b52254]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--title-bg-hover, rgba(107, 114, 128, 0.1)), transparent);
+  animation: shimmer-30b52254 2s infinite;
+  z-index: 2;
+}
+.scottstudio-navtitle .favlinks_container[data-v-30b52254]:hover {
+  transform: scale(1.02);
+}
+.favlinks_container:hover .favlinks_dynamic_bar[data-v-30b52254]{
+  background: var(--title-bg-hover, rgba(107, 114, 128, 0.15));
+  width: 24px;
+  animation: pulse-30b52254 1.5s ease-in-out infinite;
+}
+@keyframes shimmer-30b52254 {
+0% {
+    left: -100%;
+}
+100% {
+    left: 100%;
+}
+}
+@keyframes pulse-30b52254 {
+0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+}
+50% {
+    opacity: 1;
+    transform: scale(1.05);
+}
+}
+
