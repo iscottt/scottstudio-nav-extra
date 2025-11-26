@@ -48,7 +48,7 @@ defineProps({
 }
 @media screen and (max-width: 768px) {
   .sst-content .nv-blocks{
-    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 

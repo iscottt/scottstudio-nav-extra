@@ -93,26 +93,9 @@ function extractColorFromImage(imageUrl) {
     }
   });
 }
-function getContrastColor(color, lighten = false) {
-  // 解析十六进制颜色
-  const hex = color.replace('#', '');
-  let r = parseInt(hex.substr(0, 2), 16);
-  let g = parseInt(hex.substr(2, 2), 16);
-  let b = parseInt(hex.substr(4, 2), 16);
-  
-  // 根据lighten参数调整颜色亮度
-  const factor = lighten ? 1.2 : 0.8;
-  r = Math.round(Math.min(255, r * factor));
-  g = Math.round(Math.min(255, g * factor));
-  b = Math.round(Math.min(255, b * factor));
-  
-  // 转换回十六进制
-  return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-}
 onMounted(async () => {
   try {
     extractedColor.value = await extractColorFromImage(props.data.cover);
-    borderColor.value = getContrastColor(extractedColor.value,true)
   } catch (error) {
     extractedColor.value = '#0056f0'
   }
@@ -120,11 +103,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="scottstudio-navitem" :style="`border-top: 3px solid ${borderColor}`">
+  <div class="scottstudio-navitem" >
     <a class="title" v-html="data.title" :href="data.href" :target="data.opennew ? '_blank' : ''" />
     <div class="description" v-html="data.desc" />
 
-    <a class="icon"
+    <a class="icon" :href="data.href" :target="data.opennew ? '_blank' : ''"
       :style="`background-color: ${extractedColor}; background-image: url('${data.cover}'); background-size: 50px 50px;`">
       <div class="mask"></div>
     </a>
@@ -141,6 +124,7 @@ onMounted(async () => {
   cursor: pointer;
   border-radius: 3px 3px 13px 13px;
   background: linear-gradient(#fff, #fafbfc 88%, #eaeef5);
+  border-top: 3px solid hsl(var(--thyuu--main-color, 0 70% 70%));;
 }
 
 .scottstudio-navitem .title {
@@ -212,22 +196,27 @@ onMounted(async () => {
   opacity: 1 !important;
 }
 
-:root[theme='dark'] .scottstudio-navitem{
+:root[theme='dark'] .scottstudio-navitem,
+.dark .scottstudio-navitem,
+.dark-page .scottstudio-navitem{
   background-image: linear-gradient(rgb(45, 55, 72), rgb(26, 32, 44) 88%, rgb(23, 25, 35));
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 0px, rgba(255, 255, 255, 0.1) 1px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) -1px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px -1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 0px 0px 2px inset;
-  border-color: rgb(229, 231, 235);
 }
-:root[theme='dark'] .scottstudio-navitem .icon{
+:root[theme='dark'] .scottstudio-navitem .icon,
+.dark.scottstudio-navitem .icon,
+.dark-page .scottstudio-navitem .icon{
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px 0px;
 }
-:root[theme='dark'] .scottstudio-navitem .title{
-  color: #e2e8f0;
-}
-:root[theme='dark'] .scottstudio-navitem .description{
-  color: #a0aec0;
-}
 :root[theme='dark'] .scottstudio-navitem .title,
-:root[theme='dark'] .scottstudio-navitem .description{
+.dark .scottstudio-navitem .title,
+.dark-page .scottstudio-navitem .title{
+  color: #e2e8f0;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+}
+:root[theme='dark'] .scottstudio-navitem .description,
+.dark .scottstudio-navitem .description,
+.dark-page .scottstudio-navitem .description{
+  color: #a0aec0;
     text-shadow: 0 1px rgba(0, 0, 0, 0.5);
 }
 </style>

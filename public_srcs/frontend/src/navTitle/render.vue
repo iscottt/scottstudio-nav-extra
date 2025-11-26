@@ -20,7 +20,7 @@ defineProps({
 <style scoped>
 .scottstudio-navtitle {
   position: relative;
-  margin-bottom: 1em;
+  margin-block: 1em;
 }
 
 .scottstudio-navtitle .decoration {
@@ -133,7 +133,9 @@ defineProps({
 
 }
 
-:root[theme='dark'] .favlinks_container{
+:root[theme='dark'] .favlinks_container,
+.dark .favlinks_container,
+.dark-page .favlinks_container{
   background-image: linear-gradient(rgb(31, 41, 55), rgb(17, 24, 39));
   border-color: rgb(55, 65, 81);
   box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 5px 0px, rgba(255, 255, 255, 0.1) 1px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) -1px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px -1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 0px 0px 2px inset;
