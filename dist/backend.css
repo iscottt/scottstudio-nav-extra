@@ -1,26 +1,23 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./backend/src/gridBlock/ui.vue?vue&type=style&index=0&id=e627aca0&scoped=true&lang=css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.grid-cols-1[data-v-e627aca0] {
+.grid-cols-1[data-v-70bc7c3f] {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-2[data-v-e627aca0] {
+.grid-cols-2[data-v-70bc7c3f] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3[data-v-e627aca0] {
+.grid-cols-3[data-v-70bc7c3f] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.grid-cols-4[data-v-e627aca0] {
+.grid-cols-4[data-v-70bc7c3f] {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.grid-cols-5[data-v-e627aca0] {
+.grid-cols-5[data-v-70bc7c3f] {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-.grid-cols-6[data-v-e627aca0] {
+.grid-cols-6[data-v-70bc7c3f] {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
-.scottstudio-panel[data-v-e627aca0] {
+.scottstudio-panel[data-v-70bc7c3f] {
   --text-color: #000;
   --border-color: rgba(179, 192, 209, 0.3);
   --opacity-color: rgba(179, 192, 209, 0.05);
@@ -31,12 +28,12 @@
   overflow: hidden;
   margin-block: 1em;
 }
-.scottstudio-panel>.content[data-v-e627aca0] {
+.scottstudio-panel>.content[data-v-70bc7c3f] {
   font-size: var(--thyuu--size-medium);
   color: var(--content-color);
   padding: 1em;
 }
-.scottstudio-panel.primary[data-v-e627aca0] {
+.scottstudio-panel.primary[data-v-70bc7c3f] {
   --primary-opacity-1: rgba(0, 112, 245, .1);
   --primary-opacity-2: rgba(0, 112, 245, .2);
   --primary-color: #0070f5;
@@ -45,7 +42,7 @@
   --title-color: var(--primary-color);
   --content-color: #333639;
 }
-.scottstudio-panel.success[data-v-e627aca0] {
+.scottstudio-panel.success[data-v-70bc7c3f] {
   --success-opacity-1: rgba(103, 194, 58, .1);
   --success-opacity-2: rgba(103, 194, 58, .2);
   --success-color: #67c23a;
@@ -54,7 +51,7 @@
   --title-color: var(--success-color);
   --content-color: #36661f;
 }
-.scottstudio-panel.warning[data-v-e627aca0] {
+.scottstudio-panel.warning[data-v-70bc7c3f] {
   --warning-opacity-1: rgba(230, 162, 60, .1);
   --warning-opacity-2: rgba(230, 162, 60, .2);
   --warning-color: #e6a23c;
@@ -63,7 +60,7 @@
   --title-color: var(--warning-color);
   --content-color: #66481b;
 }
-.scottstudio-panel.error[data-v-e627aca0] {
+.scottstudio-panel.error[data-v-70bc7c3f] {
   --error-opacity-1: rgba(245, 108, 108, .1);
   --error-opacity-2: rgba(245, 108, 108, .2);
   --error-color: #f56c6c;
@@ -73,11 +70,8 @@
   --content-color: #662d2d;
 }
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./backend/src/navLink/ui.vue?vue&type=style&index=0&id=380795cc&scoped=true&lang=css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.scottstudio-navitem[data-v-380795cc] {
+.scottstudio-navitem[data-v-24091204] {
   box-shadow: 0 5px 5px rgba(215, 221, 230, 0.5), 1px 0 0 #d8e0ea inset, -1px 0 0 #d8e0ea inset, 0 -1px 0 #d8e0ea inset, 0 0 0 2px rgba(255, 255, 255, 0.75) inset;
   height: 130px;
   margin: 15px 0 30px;
@@ -89,21 +83,21 @@
   background: linear-gradient(#fff, #fafbfc 88%, #eaeef5);
   border-top: 3px solid rgb(0, 103, 255);
 }
-.scottstudio-navitem .title[data-v-380795cc] {
+.scottstudio-navitem .title[data-v-24091204] {
   font-size: 15.5px;
   color: #475669;
   text-shadow: 0 1px #fff;
   margin-bottom: 0.5rem;
 }
-.scottstudio-navitem .description[data-v-380795cc] {
+.scottstudio-navitem .description[data-v-24091204] {
   font-size: 13px;
   color: #99a9bf;
   text-shadow: 0 1px #fff;
 }
-.scottstudio-article .icon i[data-v-380795cc] {
+.scottstudio-article .icon i[data-v-24091204] {
   font-size: 1.5em;
 }
-.scottstudio-navitem .icon[data-v-380795cc] {
+.scottstudio-navitem .icon[data-v-24091204] {
   position: absolute;
   width: 65px;
   height: 65px;
@@ -127,7 +121,7 @@
   transition: left ease-out 0.3s, bottom cubic-bezier(0.5, 3, 0.5, 1) 0.75s, width ease-out 0.3s, height ease-out 0.3s, border-radius ease-out 0.15s, margin-left ease-out 0.3s;
   box-shadow: 0 3px 8px rgba(200, 215, 230, 0.5);
 }
-.scottstudio-navitem .icon .mask[data-v-380795cc] {
+.scottstudio-navitem .icon .mask[data-v-24091204] {
   opacity: 0.66;
   transition: 0.25s;
   position: absolute;
@@ -135,22 +129,16 @@
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
 }
 
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./backend/src/navLink/inline-tunes.vue?vue&type=style&index=0&id=2865a2cd&scoped=true&lang=css ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.link-option[data-v-2865a2cd] {
+.link-option[data-v-e7ed1d50] {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
 }
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./backend/src/navSearch/ui.vue?vue&type=style&index=0&id=a2d49528&scoped=true&lang=css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.mi-calculator-placeholder[data-v-a2d49528] {
+.mi-calculator-placeholder[data-v-5cebf61a] {
   padding: 20px;
   border: 2px dashed #ccc;
   text-align: center;
@@ -159,15 +147,12 @@
   background: #f9f9f9;
 }
 
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./backend/src/navTitle/ui.vue?vue&type=style&index=0&id=9d8e60ac&scoped=true&lang=css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.scottstudio-navtitle[data-v-9d8e60ac] {
+.scottstudio-navtitle[data-v-59aa71a8] {
   position: relative;
   margin-bottom: 1em;
 }
-.scottstudio-navtitle .decoration[data-v-9d8e60ac] {
+.scottstudio-navtitle .decoration[data-v-59aa71a8] {
   transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
   border-radius: 0.5rem;
@@ -180,7 +165,7 @@
   position: absolute;
   transform: translateY(-50%);
 }
-.scottstudio-navtitle .favlinks_container[data-v-9d8e60ac] {
+.scottstudio-navtitle .favlinks_container[data-v-59aa71a8] {
   --tw-shadow: 0 5px 5px rgba(215, 221, 230, 0.5), 1px 0 0 #d8e0ea inset, -1px 0 0 #d8e0ea inset, 0 -1px 0 #d8e0ea inset, 0 0 0 2px rgba(255, 255, 255, 0.75) inset;
   --tw-shadow-colored: 0 5px 5px var(--tw-shadow-color), inset 1px 0 0 var(--tw-shadow-color), inset -1px 0 0 var(--tw-shadow-color), inset 0 -1px 0 var(--tw-shadow-color), inset 0 0 0 2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -194,7 +179,7 @@
   position: relative;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
-.scottstudio-navtitle .favlinks_title[data-v-9d8e60ac] {
+.scottstudio-navtitle .favlinks_title[data-v-59aa71a8] {
 
   display: inline-block;
   padding: 0 8px;
@@ -202,14 +187,14 @@
   position: relative;
   margin: 0;
 }
-.favlinks_title_text[data-v-9d8e60ac] {
+.favlinks_title_text[data-v-59aa71a8] {
   position: relative;
   z-index: 3;
   display: inline-block;
   transition: transform 0.3s ease-out;
   transform-origin: center;
 }
-.favlinks_dynamic_bar[data-v-9d8e60ac] {
+.favlinks_dynamic_bar[data-v-59aa71a8] {
   background: var(--title-bg-color, rgba(107, 114, 128, 0.2));
   position: relative;
   overflow: hidden;
@@ -221,7 +206,7 @@
   display: inline-block;
   margin-left: 0.5rem;
 }
-.favlinks_dynamic_bar[data-v-9d8e60ac]::after {
+.favlinks_dynamic_bar[data-v-59aa71a8]::after {
   content: '';
   position: absolute;
   top: 0;
@@ -229,10 +214,10 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, var(--title-bg-hover, rgba(107, 114, 128, 0.1)), transparent);
-  animation: shimmer-9d8e60ac 2s infinite;
+  animation: shimmer-59aa71a8 2s infinite;
   z-index: 2;
 }
-@keyframes shimmer-9d8e60ac {
+@keyframes shimmer-59aa71a8 {
 0% {
     left: -100%;
 }
@@ -241,18 +226,15 @@
 }
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./backend/src/navTitle/settings.vue?vue&type=style&index=0&id=26534739&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-.icon-list[data-v-26534739] {
+.icon-list[data-v-3fe500ff] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   margin-top: 8px;
 }
-.icon-list .icon-item[data-v-26534739] {
+.icon-list .icon-item[data-v-3fe500ff] {
   width: 28px;
   height: 28px;
   text-align: center;
@@ -267,14 +249,14 @@
   border: 1px solid var(--primary-color);
   border-radius: 5px;
 }
-.icon-list .icon-item.active[data-v-26534739] {
+.icon-list .icon-item.active[data-v-3fe500ff] {
   background: var(--primary-color);
   color: #fff;
 }
-.is-dark .icon-list .icon-item[data-v-26534739] {
+.is-dark .icon-list .icon-item[data-v-3fe500ff] {
   border-color: #fff;
 }
-.is-dark .icon-list .icon-item.active[data-v-26534739] {
+.is-dark .icon-list .icon-item.active[data-v-3fe500ff] {
   border-color: var(--primary-color);
 }
 
