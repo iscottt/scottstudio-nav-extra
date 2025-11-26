@@ -4,7 +4,7 @@
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./gridBlock/index.js": 9451,
+	"./gridBlock/index.js": 5342,
 	"./navLink/index.js": 1127,
 	"./navSearch/index.js": 8529,
 	"./navTitle/index.js": 5305
@@ -32,7 +32,7 @@ webpackContext.id = 562;
 
 /***/ }),
 
-/***/ 9451:
+/***/ 5342:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -69,10 +69,10 @@ var _hoisted_1 = {
 });
 ;// CONCATENATED MODULE: ./frontend/src/gridBlock/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/gridBlock/render.vue?vue&type=style&index=0&id=18313a7c&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/gridBlock/render.vue?vue&type=style&index=0&id=15390dcf&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/gridBlock/render.vue?vue&type=style&index=0&id=18313a7c&lang=css
+;// CONCATENATED MODULE: ./frontend/src/gridBlock/render.vue?vue&type=style&index=0&id=15390dcf&lang=css
 
 ;// CONCATENATED MODULE: ./frontend/src/gridBlock/render.vue
 
