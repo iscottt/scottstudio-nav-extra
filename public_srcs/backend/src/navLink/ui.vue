@@ -18,7 +18,7 @@ var handleSelect = () => {
 </script>
 
 <template>
-  <div class="scottstudio-navitem">
+  <div class="scottstudio-navitem" :style="`border-top: 3px solid ${data.color || 'rgb(0, 103, 255)'}`">
     <editorRichText tag="a" class="title" v-model:value="data.title" />
     <editorRichText tag="div" class="description" v-model:value="data.desc" />
 
@@ -41,7 +41,6 @@ var handleSelect = () => {
   cursor: pointer;
   border-radius: 3px 3px 13px 13px;
   background: linear-gradient(#fff, #fafbfc 88%, #eaeef5);
-  border-top: 3px solid rgb(0, 103, 255);
 }
 
 .scottstudio-navitem .title {

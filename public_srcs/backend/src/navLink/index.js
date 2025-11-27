@@ -2,6 +2,7 @@ var { register_block_type, unregister_block_type } = nv.editor.blocks;
 import editor from "./ui.vue"
 import inlineTunes from "./inline-tunes.vue"
 import icon from "./icon.vue"
+import settings from "./settings.vue"
 export default () => {
 setTimeout(() => {
 	register_block_type("scottstudio/nav-link", {
@@ -13,9 +14,11 @@ setTimeout(() => {
 			cover: '',
 			desc:'',
 			href:'',
+			color:'',
 			opennew: false
 		},
 		editor,
+		settings,
 		inlineTunes
 	})
 });

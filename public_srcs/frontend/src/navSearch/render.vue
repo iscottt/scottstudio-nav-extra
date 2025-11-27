@@ -1,5 +1,8 @@
 <script setup>
 import { watch, onMounted, ref, computed, defineProps } from 'vue'
+const props = defineProps({
+  data: Object,
+})
 const engineList = [
   {
     name: 'Bing',
@@ -63,7 +66,17 @@ function chooseEngine(item) {
 watch(engineCurrent, () => {
   updatePlaceholder()
 })
-onMounted(updatePlaceholder)
+onMounted(() => {
+  updatePlaceholder()
+  const styleTag = document.createElement('style')
+  styleTag.innerHTML = `
+    :root {
+      --thyuu--main-color: ${props.data.mainColor || '213deg 100% 48%'};
+      --thyuu--subs-color: ${props.data.subsColor || '200deg 93% 63%'};
+    }
+  `
+  document.head.appendChild(styleTag)
+})
 </script>
 
 <template>
@@ -73,7 +86,8 @@ onMounted(updatePlaceholder)
       <span class="search-selector">
         <img :src="currentImg" alt="">
         <ul class="engine-list">
-          <li v-for="engine in engineList" @click="chooseEngine(engine)" :class="{active: engine.name === engineCurrent}" :key="engine.name">{{ engine.name }}</li>
+          <li v-for="engine in engineList" @click="chooseEngine(engine)"
+            :class="{ active: engine.name === engineCurrent }" :key="engine.name">{{ engine.name }}</li>
         </ul>
       </span>
       <input type="search" placeholder="微软Bing搜索" autocomplete="off" data-status="true">
@@ -89,19 +103,6 @@ onMounted(updatePlaceholder)
         </div>
       </button>
     </form>
-    <!-- <div class="search-list">
-      <div class="search-group">
-        <ul>
-          <li v-for="engine in engineList" :key="engine.name">
-            <input :id="engine.name" v-model="engineCurrent" hidden type="radio" name="type" :value="engine.url"
-              :data-placeholder="engine.placeholder" :checked="engine.name === engineCurrent">
-            <label :for="engine.name" @click="chooseEngine(engine)">
-              <span class="text-muted">{{ engine.name }}</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </div> -->
   </div>
 </template>
 <style scoped>
@@ -114,11 +115,13 @@ onMounted(updatePlaceholder)
   max-width: 60vw;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 768px) {
   .search-main {
     max-width: 100vw;
   }
 }
+
 .search-main .search-selector {
   height: 100%;
   position: absolute;
@@ -202,8 +205,8 @@ onMounted(updatePlaceholder)
   outline: none;
   transition: 0.7s;
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 1em 0 hsl(var(--thyuu--main-color, 0 70% 70%) / .2), 0 .5em 1em -0.5em hsl(var(--thyuu--main-color, 0 70% 70%) / .5);
-  background: linear-gradient(135deg, hsl(0deg 0% 20% / 5%) 20%, hsl(var(--thyuu--main-color, 0 70% 70%) / .8) 30%, hsl(var(--thyuu--subs-color, 17deg 95% 70%) / .8) 70%, var(--thyuu--color-back-font, hsl(0deg 0% 20% / 5%)) 80%) 50% / 300% 100%;
+  box-shadow: 0 0 1em 0 hsl(var(--thyuu--main-color, 213deg 100% 48%) / .2), 0 .5em 1em -0.5em hsl(var(--thyuu--main-color, 213deg 100% 48%) / .5);
+  background: linear-gradient(135deg, hsl(0deg 0% 20% / 5%) 20%, hsl(var(--thyuu--main-color, 213deg 100% 48%) / .8) 30%, hsl(var(--thyuu--subs-color, 200deg 93% 63%) / .8) 70%, var(--thyuu--color-back-font, hsl(0deg 0% 20% / 5%)) 80%) 50% / 300% 100%;
 }
 
 .search-main button .btn-meta {
@@ -221,7 +224,8 @@ onMounted(updatePlaceholder)
   max-width: 10em;
   margin: 0px;
 }
-.engine-list{
+
+.engine-list {
   position: absolute;
   left: 0;
   bottom: 110%;
@@ -237,13 +241,15 @@ onMounted(updatePlaceholder)
   transition: .35s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(2em);
 }
-.search-selector:hover .engine-list{
+
+.search-selector:hover .engine-list {
   opacity: 1;
   transform: none;
 }
-.engine-list li{
+
+.engine-list li {
   cursor: pointer;
-  padding: 0  1em;
+  padding: 0 1em;
   font-size: var(--thyuu--size-medium, 14px);
   border-radius: var(--thyuu--border-radius, 1rem);
   border: 1px solid transparent;
@@ -253,14 +259,15 @@ onMounted(updatePlaceholder)
 }
 
 .engine-list li:hover,
-.engine-list li.active{
+.engine-list li.active {
   border-color: hsl(var(--thyuu--main-color, 0 70% 70%) / .2);
   background: hsl(var(--thyuu--main-color, 0 70% 70%) / .1);
   color: hsl(var(--thyuu--main-color, 0 70% 70%));
 }
+
 :root[theme='dark'] .engine-list,
 .dark .engine-list,
-.dark-page .engine-list{
+.dark-page .engine-list {
   background-image: linear-gradient(rgb(31, 41, 55), rgb(17, 24, 39));
 }
 </style>

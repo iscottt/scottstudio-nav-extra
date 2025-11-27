@@ -5,9 +5,9 @@
 
 var map = {
 	"./gridBlock/index.js": 5342,
-	"./navLink/index.js": 1127,
-	"./navSearch/index.js": 8529,
-	"./navTitle/index.js": 5305
+	"./navLink/index.js": 3670,
+	"./navSearch/index.js": 7317,
+	"./navTitle/index.js": 6559
 };
 
 
@@ -101,7 +101,7 @@ const __exports__ = rendervue_type_script_setup_true_lang_js;
 
 /***/ }),
 
-/***/ 1127:
+/***/ 3670:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -540,20 +540,17 @@ var external_Vue_ = __webpack_require__(4061);
 
 
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-0c3480cc"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-35bf8c18"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
-var _hoisted_1 = {
-  "class": "scottstudio-navitem"
-};
-var _hoisted_2 = ["innerHTML", "href", "target"];
-var _hoisted_3 = ["innerHTML"];
-var _hoisted_4 = ["href", "target"];
-var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_1 = ["innerHTML", "href", "target"];
+var _hoisted_2 = ["innerHTML"];
+var _hoisted_3 = ["href", "target"];
+var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,external_Vue_.createElementVNode)("div", {
     "class": "mask"
   }, null, -1);
 });
-var _hoisted_6 = [_hoisted_5];
+var _hoisted_5 = [_hoisted_4];
 
 /* harmony default export */ const rendervue_type_script_setup_true_lang_js = ({
   __name: 'render',
@@ -674,29 +671,32 @@ var _hoisted_6 = [_hoisted_5];
       }, _callee, null, [[0, 6]]);
     })));
     return function (_ctx, _cache) {
-      return (0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)("div", _hoisted_1, [(0,external_Vue_.createElementVNode)("a", {
+      return (0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)("div", {
+        "class": "scottstudio-navitem",
+        style: (0,external_Vue_.normalizeStyle)(" border-top: 3px solid ".concat(__props.data.color || extractedColor.value))
+      }, [(0,external_Vue_.createElementVNode)("a", {
         "class": "title",
         innerHTML: __props.data.title,
         href: __props.data.href,
         target: __props.data.opennew ? '_blank' : ''
-      }, null, 8, _hoisted_2), (0,external_Vue_.createElementVNode)("div", {
+      }, null, 8, _hoisted_1), (0,external_Vue_.createElementVNode)("div", {
         "class": "description",
         innerHTML: __props.data.desc
-      }, null, 8, _hoisted_3), (0,external_Vue_.createElementVNode)("a", {
+      }, null, 8, _hoisted_2), (0,external_Vue_.createElementVNode)("a", {
         "class": "icon",
         href: __props.data.href,
         target: __props.data.opennew ? '_blank' : '',
         style: (0,external_Vue_.normalizeStyle)("background-color: ".concat(extractedColor.value, "; background-image: url('").concat(__props.data.cover, "'); background-size: 50px 50px;"))
-      }, _hoisted_6, 12, _hoisted_4)]);
+      }, _hoisted_5, 12, _hoisted_3)], 4);
     };
   }
 });
 ;// CONCATENATED MODULE: ./frontend/src/navLink/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navLink/render.vue?vue&type=style&index=0&id=0c3480cc&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navLink/render.vue?vue&type=style&index=0&id=35bf8c18&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navLink/render.vue?vue&type=style&index=0&id=0c3480cc&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navLink/render.vue?vue&type=style&index=0&id=35bf8c18&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -707,7 +707,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-0c3480cc"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-35bf8c18"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navLink/index.js
@@ -727,7 +727,7 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_
 
 /***/ }),
 
-/***/ 8529:
+/***/ 7317:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -738,6 +738,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ navSearch)
 });
 
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__(8706);
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
 var es_array_find = __webpack_require__(113);
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
@@ -760,8 +762,9 @@ var external_Vue_ = __webpack_require__(4061);
 
 
 
+
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-30227de6"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-45dd281e"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = {
   "class": "scottstudio-nav-search"
@@ -806,7 +809,11 @@ var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
 
 /* harmony default export */ const rendervue_type_script_setup_true_lang_js = ({
   __name: 'render',
+  props: {
+    data: Object
+  },
   setup: function setup(__props) {
+    var props = __props;
     var engineList = [{
       name: 'Bing',
       url: 'https://cn.bing.com/search?q=%s%',
@@ -868,7 +875,12 @@ var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
     (0,external_Vue_.watch)(engineCurrent, function () {
       updatePlaceholder();
     });
-    (0,external_Vue_.onMounted)(updatePlaceholder);
+    (0,external_Vue_.onMounted)(function () {
+      updatePlaceholder();
+      var styleTag = document.createElement('style');
+      styleTag.innerHTML = "\n    :root {\n      --thyuu--main-color: ".concat(props.data.mainColor || '213deg 100% 48%', ";\n      --thyuu--subs-color: ").concat(props.data.subsColor || '200deg 93% 63%', ";\n    }\n  ");
+      document.head.appendChild(styleTag);
+    });
     return function (_ctx, _cache) {
       return (0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)("div", _hoisted_1, [(0,external_Vue_.createElementVNode)("form", {
         "class": "search-main",
@@ -892,10 +904,10 @@ var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
 });
 ;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=30227de6&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=45dd281e&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=30227de6&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=45dd281e&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -906,7 +918,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-30227de6"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-45dd281e"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navSearch/index.js
@@ -914,14 +926,14 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_
 /* harmony default export */ const navSearch = ({
   block_type: "scottstudio/nav-search",
   attributes: {
-    title: ""
+    btnBg: ""
   },
   render: render
 });
 
 /***/ }),
 
-/***/ 5305:
+/***/ 6559:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -932,12 +944,15 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ navTitle)
 });
 
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__(8706);
 // EXTERNAL MODULE: external "Vue"
 var external_Vue_ = __webpack_require__(4061);
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=script&setup=true&lang=js
 
+
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-7fa26346"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-77eb0b24"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = {
   "class": "scottstudio-navtitle"
@@ -963,7 +978,7 @@ var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
     return function (_ctx, _cache) {
       return (0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)("div", _hoisted_1, [(0,external_Vue_.createElementVNode)("div", {
         "class": "decoration",
-        style: (0,external_Vue_.normalizeStyle)(__props.data.style)
+        style: (0,external_Vue_.normalizeStyle)("background-image: linear-gradient(to right bottom, ".concat(__props.data.fromColor || 'rgb(0, 86, 240)', ", ").concat(__props.data.toColor || 'rgb(51, 120, 255)', ");"))
       }, null, 4), (0,external_Vue_.createElementVNode)("div", _hoisted_2, [(0,external_Vue_.createElementVNode)("div", _hoisted_3, [(0,external_Vue_.createElementVNode)("span", {
         "class": "favlinks_title_text",
         innerHTML: __props.data.title
@@ -973,10 +988,10 @@ var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
 });
 ;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=7fa26346&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=77eb0b24&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=7fa26346&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=77eb0b24&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -987,7 +1002,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-7fa26346"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-77eb0b24"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navTitle/index.js

@@ -10,7 +10,7 @@ const { data } = $props.block;
 
 <template>
   <div class="scottstudio-navtitle">
-    <div class="decoration" :style="data.style"></div>
+    <div class="decoration" :style="`background-image: linear-gradient(to right bottom, ${data.fromColor || 'rgb(0, 86, 240)'}, ${data.toColor || 'rgb(51, 120, 255)'});`"></div>
     <div class="favlinks_container">
       <h2 class="favlinks_title">
         <editorRichText tag="span" class="favlinks_title_text" v-model:value="data.title" />

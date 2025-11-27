@@ -103,7 +103,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="scottstudio-navitem" >
+  <div class="scottstudio-navitem" :style="` border-top: 3px solid ${data.color || extractedColor}`">
     <a class="title" v-html="data.title" :href="data.href" :target="data.opennew ? '_blank' : ''" />
     <div class="description" v-html="data.desc" />
 
@@ -124,7 +124,6 @@ onMounted(async () => {
   cursor: pointer;
   border-radius: 3px 3px 13px 13px;
   background: linear-gradient(#fff, #fafbfc 88%, #eaeef5);
-  border-top: 3px solid hsl(var(--thyuu--main-color, 0 70% 70%));;
 }
 
 .scottstudio-navitem .title {

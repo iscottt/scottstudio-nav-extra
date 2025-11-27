@@ -1,6 +1,7 @@
 var { register_block_type,unregister_block_type } = nv.editor.blocks;
 import editor from "./ui.vue"
 import icon from "./icon.vue"
+import settings from "./settings.vue"
 
 export default () => {
 	register_block_type("scottstudio/nav-search", {
@@ -8,7 +9,10 @@ export default () => {
 		description: "在导航页面中使用的搜索板块。",
 		icon,
 		attributes: {
+			mainColor:'',
+			subsColor:'',
 		},
-		editor
+		editor,
+		settings
 	})	
 }

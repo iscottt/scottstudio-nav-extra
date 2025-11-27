@@ -10,7 +10,8 @@ export default () => {
 		icon,
 		attributes: {
 			title: '',
-			style:'background-image: linear-gradient(to right bottom, rgb(0, 86, 240), rgb(51, 120, 255));'
+			fromColor:'',
+			toColor:''
 		},
 		editor,
 		settings

@@ -1,7 +1,12 @@
 <template>
   <div>
-    <editorCollapseBox title="装饰块样式" defaultExpanded>
-      <NInput v-model:value="data.style" type="textarea"/>
+    <editorCollapseBox title="装饰块颜色" defaultExpanded>
+
+      <div class="flex gx-5" style="align-items: center;">
+        <NInput v-model:value="data.fromColor"/>
+        <span>-</span>
+        <NInput v-model:value="data.toColor"/>
+      </div>
     </editorCollapseBox>
   </div>
 </template>

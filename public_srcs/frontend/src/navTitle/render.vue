@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <div class="scottstudio-navtitle">
-    <div class="decoration" :style="data.style"></div>
+    <div class="decoration" :style="`background-image: linear-gradient(to right bottom, ${data.fromColor || 'rgb(0, 86, 240)'}, ${data.toColor || 'rgb(51, 120, 255)'});`"></div>
     <div class="favlinks_container">
       <div class="favlinks_title">
         <span class="favlinks_title_text" v-html="data.title" />
@@ -52,6 +52,7 @@ defineProps({
   border-radius: 0.75rem;
   width: 100%;
   z-index: 4;
+  line-height: 36px;
   position: relative;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
