@@ -3,6 +3,7 @@ import { watch, onMounted, ref, computed, defineProps } from 'vue'
 const props = defineProps({
   data: Object,
 })
+const isActive = ref(false)
 const engineList = [
   {
     name: 'Bing',
@@ -83,7 +84,7 @@ onMounted(() => {
 
   <div class="scottstudio-nav-search">
     <form class="search-main" @submit="onSearch">
-      <span class="search-selector">
+      <span class="search-selector" :class="{ active: isActive }" @click="isActive = !isActive">
         <img :src="currentImg" alt="">
         <ul class="engine-list">
           <li v-for="engine in engineList" @click="chooseEngine(engine)"
@@ -108,6 +109,8 @@ onMounted(() => {
 <style scoped>
 .scottstudio-nav-search {
   margin-block: 2em;
+  position: relative;
+  z-index: 2;
 }
 
 .search-main {
@@ -228,7 +231,7 @@ onMounted(() => {
 .engine-list {
   position: absolute;
   left: 0;
-  bottom: 110%;
+  top: 110%;
   margin: 0;
   z-index: 20;
   min-width: 120px;
@@ -239,10 +242,11 @@ onMounted(() => {
   outline: var(--thyuu--border);
   opacity: 0;
   transition: .35s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(2em);
+  transform: translateY(-2em);
+  box-shadow: 0 3px 8px rgba(200, 215, 230, 0.5);
 }
 
-.search-selector:hover .engine-list {
+.search-selector.active .engine-list {
   opacity: 1;
   transform: none;
 }
@@ -256,6 +260,7 @@ onMounted(() => {
   transition: .35s;
   margin-bottom: .25em;
   font-weight: 500;
+  line-height: 32px;
 }
 
 .engine-list li:hover,
@@ -269,5 +274,6 @@ onMounted(() => {
 .dark .engine-list,
 .dark-page .engine-list {
   background-image: linear-gradient(rgb(31, 41, 55), rgb(17, 24, 39));
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px 0px;
 }
 </style>

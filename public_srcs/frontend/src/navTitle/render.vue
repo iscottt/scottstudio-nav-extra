@@ -21,6 +21,7 @@ defineProps({
 .scottstudio-navtitle {
   position: relative;
   margin-block: 1em;
+  z-index: 1;
 }
 
 .scottstudio-navtitle .decoration {

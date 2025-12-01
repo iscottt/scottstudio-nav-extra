@@ -6,8 +6,8 @@
 var map = {
 	"./gridBlock/index.js": 5342,
 	"./navLink/index.js": 3670,
-	"./navSearch/index.js": 7317,
-	"./navTitle/index.js": 6559
+	"./navSearch/index.js": 2825,
+	"./navTitle/index.js": 3257
 };
 
 
@@ -727,7 +727,7 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_
 
 /***/ }),
 
-/***/ 7317:
+/***/ 2825:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -764,20 +764,17 @@ var external_Vue_ = __webpack_require__(4061);
 
 
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-45dd281e"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-33e95181"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = {
   "class": "scottstudio-nav-search"
 };
-var _hoisted_2 = {
-  "class": "search-selector"
-};
-var _hoisted_3 = ["src"];
-var _hoisted_4 = {
+var _hoisted_2 = ["src"];
+var _hoisted_3 = {
   "class": "engine-list"
 };
-var _hoisted_5 = ["onClick"];
-var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_4 = ["onClick"];
+var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,external_Vue_.createElementVNode)("input", {
     type: "search",
     placeholder: "微软Bing搜索",
@@ -785,7 +782,7 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
     "data-status": "true"
   }, null, -1);
 });
-var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,external_Vue_.createElementVNode)("button", {
     "class": "button has-thyuu-color has-btn-effect",
     type: "submit"
@@ -814,6 +811,7 @@ var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
   },
   setup: function setup(__props) {
     var props = __props;
+    var isActive = (0,external_Vue_.ref)(false);
     var engineList = [{
       name: 'Bing',
       url: 'https://cn.bing.com/search?q=%s%',
@@ -885,10 +883,17 @@ var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
       return (0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)("div", _hoisted_1, [(0,external_Vue_.createElementVNode)("form", {
         "class": "search-main",
         onSubmit: onSearch
-      }, [(0,external_Vue_.createElementVNode)("span", _hoisted_2, [(0,external_Vue_.createElementVNode)("img", {
+      }, [(0,external_Vue_.createElementVNode)("span", {
+        "class": (0,external_Vue_.normalizeClass)(["search-selector", {
+          active: isActive.value
+        }]),
+        onClick: _cache[0] || (_cache[0] = function ($event) {
+          return isActive.value = !isActive.value;
+        })
+      }, [(0,external_Vue_.createElementVNode)("img", {
         src: currentImg.value,
         alt: ""
-      }, null, 8, _hoisted_3), (0,external_Vue_.createElementVNode)("ul", _hoisted_4, [((0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)(external_Vue_.Fragment, null, (0,external_Vue_.renderList)(engineList, function (engine) {
+      }, null, 8, _hoisted_2), (0,external_Vue_.createElementVNode)("ul", _hoisted_3, [((0,external_Vue_.openBlock)(), (0,external_Vue_.createElementBlock)(external_Vue_.Fragment, null, (0,external_Vue_.renderList)(engineList, function (engine) {
         return (0,external_Vue_.createElementVNode)("li", {
           onClick: function onClick($event) {
             return chooseEngine(engine);
@@ -897,17 +902,17 @@ var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
             active: engine.name === engineCurrent.value
           }),
           key: engine.name
-        }, (0,external_Vue_.toDisplayString)(engine.name), 11, _hoisted_5);
-      }), 64))])]), _hoisted_6, _hoisted_7], 32)]);
+        }, (0,external_Vue_.toDisplayString)(engine.name), 11, _hoisted_4);
+      }), 64))])], 2), _hoisted_5, _hoisted_6], 32)]);
     };
   }
 });
 ;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=45dd281e&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=33e95181&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=45dd281e&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=33e95181&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -918,7 +923,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-45dd281e"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-33e95181"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navSearch/index.js
@@ -933,7 +938,7 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_
 
 /***/ }),
 
-/***/ 6559:
+/***/ 3257:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -952,7 +957,7 @@ var external_Vue_ = __webpack_require__(4061);
 
 
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-77eb0b24"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-4ea251e9"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = {
   "class": "scottstudio-navtitle"
@@ -988,10 +993,10 @@ var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
 });
 ;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=77eb0b24&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=4ea251e9&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=77eb0b24&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navTitle/render.vue?vue&type=style&index=0&id=4ea251e9&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -1002,7 +1007,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-77eb0b24"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-4ea251e9"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navTitle/index.js
