@@ -6,7 +6,7 @@
 var map = {
 	"./gridBlock/index.js": 5342,
 	"./navLink/index.js": 3670,
-	"./navSearch/index.js": 2825,
+	"./navSearch/index.js": 3313,
 	"./navTitle/index.js": 3257
 };
 
@@ -727,7 +727,7 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_
 
 /***/ }),
 
-/***/ 2825:
+/***/ 3313:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -764,7 +764,7 @@ var external_Vue_ = __webpack_require__(4061);
 
 
 var _withScopeId = function _withScopeId(n) {
-  return (0,external_Vue_.pushScopeId)("data-v-33e95181"), n = n(), (0,external_Vue_.popScopeId)(), n;
+  return (0,external_Vue_.pushScopeId)("data-v-e8521ba2"), n = n(), (0,external_Vue_.popScopeId)(), n;
 };
 var _hoisted_1 = {
   "class": "scottstudio-nav-search"
@@ -909,10 +909,10 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
 });
 ;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=script&setup=true&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=33e95181&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=e8521ba2&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=33e95181&scoped=true&lang=css
+;// CONCATENATED MODULE: ./frontend/src/navSearch/render.vue?vue&type=style&index=0&id=e8521ba2&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(5932);
@@ -923,7 +923,7 @@ var exportHelper = __webpack_require__(5932);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-33e95181"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(rendervue_type_script_setup_true_lang_js, [['__scopeId',"data-v-e8521ba2"]])
 
 /* harmony default export */ const render = (__exports__);
 ;// CONCATENATED MODULE: ./frontend/src/navSearch/index.js

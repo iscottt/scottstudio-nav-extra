@@ -169,7 +169,9 @@ onMounted(() => {
   border-image: initial;
   outline: none;
 }
-
+.search-main input:active{
+  scale: 1 !important;
+}
 .search-main input::placeholder {
   transition: 0.35s;
 }
@@ -244,11 +246,13 @@ onMounted(() => {
   transition: .35s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(-2em);
   box-shadow: 0 3px 8px rgba(200, 215, 230, 0.5);
+  pointer-events: none;
 }
 
 .search-selector.active .engine-list {
   opacity: 1;
   transform: none;
+  pointer-events: auto;
 }
 
 .engine-list li {
